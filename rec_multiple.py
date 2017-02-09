@@ -1,12 +1,11 @@
-import time
-import urllib
-import re
-fh = open("week1.txt")
-data = fh.read()
-number1 = re.findall('314[0-9]+',data)
-number2 = re.findall('271[0-9]+',data)
+#Interger Multiplication-Recursive Call
+
+##input
+number1 = '3141592653589793238462643383279502884197169399375105820974944592'
+number2 = '2718281828459045235360287471352662497757247093699959574966967627'
+
 def Recursive(number1,number2):
-	n = len(number1)
+	n = max(len(number1),len(number2))
 	if n == 1:
 		return int(number1)*int(number2)
 	else:
@@ -17,7 +16,6 @@ def Recursive(number1,number2):
 		product = pow(10,n)*Recursive(a,c)+pow(10,n/2)*(Recursive(a,d)+Recursive(b,c))+Recursive(b,d)
 		return product
 
-t = time.time()
-print Recursive(number1[0],number2[0])
-elapse = time.time()-t
-print "elapse=", elapse
+if __name__ == '__main__':
+	assert Recursive('20','40')==800, "Result is false" #simple test
+	print Recursive(number1,number2)
