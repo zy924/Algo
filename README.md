@@ -13,4 +13,4 @@ Perfomed Merge sort
 
 ###Exercises3: count_inversion.py
 Counted the inversion pairs in an given array.
-The Input array is "InteferArray.txt" where each line is an element
+The Input array is "IntegerArray.txt" where each line is an element
