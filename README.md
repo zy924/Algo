@@ -14,3 +14,9 @@ Perfomed Merge sort
 ###Exercises3: count_inversion.py
 Counted the inversion pairs in an given array.
 The Input array is "IntegerArray.txt" where each line is an element
+
+###Exercise4: quick_sort.py quick_sort_end.py quick_sort_median.py
+Count the number of comparisions by quicksort
+Ex4-1: using the first element as the pivot element
+Ex4-2: using the final element as the pivot element
+Ex4-3: compare the first,middle and the final element, using the median of these three element as the pivot element (WARNING: do not keep track of the comparisons made in identifying the median of the three candidate elements)
